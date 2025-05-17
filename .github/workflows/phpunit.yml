@@ -1,0 +1,29 @@
+name: Run PHPUnit Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Instalar PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'  # ou 8.4 quando oficialmente disponível no GitHub Actions
+        extensions: pdo, pdo_mysql
+        coverage: none
+
+    - name: Verificar versão do PHP
+      run: php -v
+
+    - name: Rodar PHPUnit
+      run: |
+        php vendor/bin/phpunit --configuration phpunit.xml
