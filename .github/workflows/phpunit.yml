@@ -23,5 +23,8 @@ jobs:
       - name: Instalar dependências com Composer
         run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: Dar permissão de execução ao PHPUnit
+        run: chmod +x vendor/bin/phpunit
+
       - name: Rodar testes PHPUnit
         run: vendor/bin/phpunit --configuration phpunit.xml
