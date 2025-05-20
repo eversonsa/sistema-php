@@ -37,6 +37,11 @@ use App\Controller\LivroController;
        Novo Livro
     </a>
 
+    <a href="relatorio.php" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">📄 Gerar PDF</a>
+    
+    <a href="exportar-excel.php" class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded">Exportar Excel</a>
+
+
     <table class="w-full border-collapse border border-gray-300">
         <thead>
             <tr class="bg-gray-200">

@@ -6,3 +6,6 @@
 [2025-05-20T13:38:03.209999+00:00] auth.INFO: Iniciando login para usuario de email {"email":"joao@bookwise.com"} []
 [2025-05-20T13:38:03.418003+00:00] auth.INFO: Preenchendo a info da sessao do usuario {"usuario":{"App\\Model\\Usuario":{"id":2,"nome":"João Usuário","email":"joao@bookwise.com","senha":"$2y$12$RVDuVd5AF/sQizLkb.XKgOa0QIZBbybpzof3LI2JZkqwX.kEa2mX6","role":"user","criado_em":"2025-05-18 19:19:43"}}} []
 [2025-05-20T13:38:03.418674+00:00] auth.INFO: Login realizado com sucesso {"email":"joao@bookwise.com"} []
+[2025-05-20T13:55:02.669744+00:00] auth.INFO: Iniciando login para usuario de email {"email":"admin@bookwise.com"} []
+[2025-05-20T13:55:03.135530+00:00] auth.INFO: Preenchendo a info da sessao do usuario {"usuario":{"App\\Model\\Usuario":{"id":1,"nome":"Everson Admin","email":"admin@bookwise.com","senha":"$2y$12$A.kDWhZR2G/Be3sL3hwut.2LuuS54QLeOElge9B6HqQQe7H.WlUva","role":"admin","criado_em":"2025-05-18 19:19:43"}}} []
+[2025-05-20T13:55:03.136165+00:00] auth.INFO: Login realizado com sucesso {"email":"admin@bookwise.com"} []
