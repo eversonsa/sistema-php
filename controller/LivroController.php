@@ -1,5 +1,8 @@
 <?php
-require_once 'service/LivroService.php';
+
+namespace App\Controller;
+
+use App\Service\LivroService;
 
 class LivroController {
     private $service;

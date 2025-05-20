@@ -1,4 +1,9 @@
 <?php
+
+namespace App\Infra;
+
+use \PDO;
+
 class Database {
     private static $host = 'localhost';
     private static $db   = 'bookwise';

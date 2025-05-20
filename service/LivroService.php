@@ -1,5 +1,8 @@
 <?php
-require_once 'repository/LivroRepository.php';
+
+namespace App\Service;
+
+use App\Repository\LivroRepository;
 
 class LivroService {
     private $repo;

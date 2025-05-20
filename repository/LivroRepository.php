@@ -1,6 +1,10 @@
 <?php
-require_once 'infra/Database.php';
-require_once 'model/Livro.php';
+
+namespace App\Repository;
+
+use App\Model\Livro;
+use App\Infra\Database;
+use \PDO;
 
 class LivroRepository {
     private $conn;
@@ -11,13 +15,13 @@ class LivroRepository {
 
     public function findAll() {
         $stmt = $this->conn->query("SELECT * FROM livros");
-        return $stmt->fetchAll(PDO::FETCH_CLASS, 'Livro');
+        return $stmt->fetchAll(PDO::FETCH_CLASS, Livro::class); // <<< corrigido aqui
     }
 
     public function find($id) {
         $stmt = $this->conn->prepare("SELECT * FROM livros WHERE id = ?");
         $stmt->execute([$id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Livro');
+        $stmt->setFetchMode(PDO::FETCH_CLASS, Livro::class); // <<< corrigido aqui
         return $stmt->fetch();
     }
 
